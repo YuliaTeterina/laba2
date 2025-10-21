@@ -34,8 +34,7 @@ public class Main {
                     int nameChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (nameChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
                         Name cleopatra = new Name("Клеопатра");
                         Name pushkin = new Name("Пушкин", "Александр", "Сергеевич");
                         Name mayakovskiy = new Name("Маяковский", "Владимир");
@@ -44,7 +43,6 @@ public class Main {
                         System.out.println(pushkin);
                         System.out.println(mayakovskiy);
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("\nСоздание имен с вводом данных:");
 
                         System.out.println("\n1. Создание имени (только личное имя):");
@@ -69,14 +67,13 @@ public class Main {
 
                 //ЗАДАНИЕ 2
                 case 2:
-                    System.out.println("\n=== ЗАДАЧА 1.2 - ОБЪЕДИНЕНИЕ ЧЕЛОВЕКА И ИМЕНИ ===");
+                    System.out.println("\n=== ЗАДАЧА 2.2 - ЧЕЛОВЕК С ИМЕНЕМ ===");
                     System.out.println("1 - Запустить пример из задания");
                     System.out.println("2 - Ввести данные с клавиатуры");
                     int personChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (personChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
                         Person cleopatraPerson = new Person(new Name("Клеопатра"), 152);
                         Person pushkinPerson = new Person(new Name("Пушкин", "Александр", "Сергеевич"), 167);
                         Person mayakovskiyPerson = new Person(new Name("Маяковский", "Владимир"), 189);
@@ -85,7 +82,6 @@ public class Main {
                         System.out.println(pushkinPerson);
                         System.out.println(mayakovskiyPerson);
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("\nСоздание человека с объектом Имя:");
 
                         System.out.println("\n1. Создание имени для человека:");
@@ -125,40 +121,31 @@ public class Main {
 
                 //ЗАДАНИЕ 3
                 case 3:
-                    System.out.println("\n=== ЗАДАЧА 1.4 - ЧЕЛОВЕК С РОДИТЕЛЕМ ===");
+                    System.out.println("\n=== ЗАДАЧА 2.3 - ЧЕЛОВЕК С РОДИТЕЛЕМ ===");
                     System.out.println("1 - Запустить пример из задания");
                     System.out.println("2 - Ввести данные с клавиатуры");
                     int parentChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (parentChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
 
-                        // 1. Создать людей: Чудова Ивана, Чудова Петра, Бориса
                         Person ivan = new Person(new Name("Чудов", "Иван"), 175);
                         Person petr = new Person(new Name("Чудов", "Петр"), 180);
                         Person boris = new Person(new Name("Борис"), 185);
 
-                        System.out.println("До установки отцов:");
+                        /*System.out.println("До установки отцов:");
                         System.out.println("Иван: " + ivan);
                         System.out.println("Петр: " + petr);
-                        System.out.println("Борис: " + boris);
+                        System.out.println("Борис: " + boris);*/
 
-                        // 2. Сделать Ивана отцом Петра, а Петра отцом Бориса
                         petr.setFather(ivan);
                         boris.setFather(petr);
 
-                        // 3. Вывести на экран строковое представление всех троих людей
                         System.out.println("\nПосле установки отцов:");
                         System.out.println("Иван: " + ivan);
                         System.out.println("Петр: " + petr);
                         System.out.println("Борис: " + boris);
-
-                        System.out.println("\n--- Объяснение ---");
-                        System.out.println("Борис унаследовал фамилию 'Чудов' от Петра");
-                        System.out.println("Борис получил отчество 'Петрович' от имени Петра");
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("\nСоздание семьи с вводом данных:");
 
                         System.out.println("\n=== СОЗДАНИЕ ОТЦА ===");
@@ -179,10 +166,10 @@ public class Main {
                         int grandsonHeight = validator.getValidIntInRange("Введите рост внука (см): ", 50, 250);
                         Person grandsonPerson = new Person(new Name(grandsonFirstName), grandsonHeight);
 
-                        System.out.println("\n--- До установки родственных связей ---");
+                        /*System.out.println("\n--- До установки родственных связей ---");
                         System.out.println("Отец: " + fatherPerson);
                         System.out.println("Сын: " + sonPerson);
-                        System.out.println("Внук: " + grandsonPerson);
+                        System.out.println("Внук: " + grandsonPerson);*/
 
                         sonPerson.setFather(fatherPerson);
                         grandsonPerson.setFather(sonPerson);
@@ -196,46 +183,38 @@ public class Main {
 
                 //ЗАДАНИЕ 4
                 case 4:
-                    System.out.println("\n=== ЗАДАЧА - ЛОМАНАЯ ===");
+                    System.out.println("\n=== ЗАДАЧА 3.2 - ЛОМАНАЯ ===");
                     System.out.println("1 - Запустить пример из задания");
                     System.out.println("2 - Ввести данные с клавиатуры");
                     int polylineChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (polylineChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
 
-                        // Создаем точки как в задании
                         Point p1 = new Point(1, 5);
                         Point p2 = new Point(2, 8);
                         Point p3 = new Point(5, 3);
                         Point p4 = new Point(2, -5);
                         Point p5 = new Point(4, -8);
 
-                        // Первая ломаная
                         Polyline exampleLine1 = new Polyline();
                         exampleLine1.addPoint(p1);
                         exampleLine1.addPoint(p2);
                         exampleLine1.addPoint(p3);
                         System.out.println("Первая ломаная: " + exampleLine1);
 
-                        // Вторая ломаная
                         Polyline exampleLine2 = new Polyline();
-                        exampleLine2.addPoint(p1); // общая первая точка
+                        exampleLine2.addPoint(p1);
                         exampleLine2.addPoint(p4);
                         exampleLine2.addPoint(p5);
-                        exampleLine2.addPoint(p3); // общая последняя точка
+                        exampleLine2.addPoint(p3);
                         System.out.println("Вторая ломаная: " + exampleLine2);
 
                         System.out.println("\nСдвигаем первую точку на (3, 2):");
                         p1.move(3, 2);
                         System.out.println("Первая ломаная после сдвига: " + exampleLine1);
                         System.out.println("Вторая ломаная после сдвига: " + exampleLine2);
-
-                        System.out.println("\n--- Объяснение ---");
-                        System.out.println("Первая точка общая для обеих ломаных, поэтому сдвинулись обе");
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("\nСоздание двух ломаных с общими точками:");
 
                         System.out.println("\n=== СОЗДАНИЕ ПЕРВОЙ ЛОМАНОЙ ===");
@@ -287,17 +266,15 @@ public class Main {
 
                 //ЗАДАНИЕ 5
                 case 5:
-                    System.out.println("\n=== СОЗДАНИЕ ЛОМАНОЙ РАЗНЫМИ СПОСОБАМИ ===");
+                    System.out.println("\n=== ЗАДАЧА 4.9 - СОЗДАЕМ ЛОМАНУЮ ===");
                     System.out.println("1 - Запустить пример из задания");
                     System.out.println("2 - Ввести данные с клавиатуры");
                     int createChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (createChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
                         System.out.println("Примеры создания ломаных разными способами:");
 
-                        // Пример 1: Создание без параметров
                         System.out.println("\n1. Создание без параметров:");
                         Polyline example1 = new Polyline();
                         System.out.println("Пустая ломаная: " + example1);
@@ -306,7 +283,6 @@ public class Main {
                         example1.addPoint(new Point(2, 0));
                         System.out.println("После добавления точек: " + example1);
 
-                        // Пример 2: Создание с набором точек
                         System.out.println("\n2. Создание с набором точек:");
                         java.util.List<Point> examplePoints = java.util.Arrays.asList(
                                 new Point(10, 10),
@@ -322,7 +298,6 @@ public class Main {
                         System.out.println("- Без параметров (пустая)");
                         System.out.println("- С готовым набором точек");
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("1. Создание пустой ломаной и добавление точек:");
                         Polyline emptyLine = new Polyline();
                         System.out.println("Пустая ломаная: " + emptyLine);
@@ -354,16 +329,14 @@ public class Main {
 
                 //ЗАДАНИЕ 6
                 case 6:
-                    System.out.println("\n=== ДЛИНА ЛОМАНОЙ ===");
+                    System.out.println("\n=== ЗАДАЧА 5.7 - ДЛИНА ЛОМАНОЙ ===");
                     System.out.println("1 - Запустить пример из задания");
                     System.out.println("2 - Ввести данные с клавиатуры");
                     int lengthChoice = validator.getValidIntInRange("Выберите вариант: ", 1, 2);
 
                     if (lengthChoice == 1) {
-                        // Пример из задания
-                        System.out.println("\n--- Готовые примеры из задания ---");
+                        System.out.println("\n--- Примеры из задания ---");
 
-                        // Создаем ломаную как в задании: {1;5}, {2;8}, {5;3}
                         PolylineWithLength exampleLine = new PolylineWithLength();
                         exampleLine.addPoint(1, 5);
                         exampleLine.addPoint(2, 8);
@@ -381,12 +354,7 @@ public class Main {
 
                         System.out.println("   Ломаная после добавления: " + exampleLine);
                         System.out.println("   Новая длина: " + String.format("%.2f", exampleLine.getLength()));
-
-                        System.out.println("\n--- Объяснение ---");
-                        System.out.println("Длина ломаной вычисляется как сумма длин всех отрезков между точками");
-                        System.out.println("При добавлении новых точек длина автоматически пересчитывается");
                     } else {
-                        // Ввод с клавиатуры
                         System.out.println("Создание ломаной и вычисление её длины:");
 
                         PolylineWithLength line = new PolylineWithLength();
