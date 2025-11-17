@@ -28,7 +28,6 @@
 ### Пример решения задачи
 <img width="286" height="119" alt="image" src="https://github.com/user-attachments/assets/5a1005bf-6426-4757-8ac5-33e619a36a6e" />
 
-
 # Задание 2
 ### Задача 2
 Человек с именем.  
@@ -43,7 +42,7 @@
 2. Конструктор принимает объект Name вместо строки
 3. В toString() вызывать name.toString() для получения строкового представления
 ### Пример решения задачи
-![img_1.png](img_1.png)
+<img width="384" height="113" alt="image" src="https://github.com/user-attachments/assets/f542d611-b3b5-4770-9bef-7c89c4202cda" />
 
 # Задание 2
 ### Задача 3
@@ -67,7 +66,7 @@
 * Если у человека нет отчества → создать отчество от имени отца + "ович"
 3. Создать трех людей и установить родственные связи
 ### Пример решения задачи
-![img_2.png](img_2.png)
+<img width="398" height="279" alt="image" src="https://github.com/user-attachments/assets/86496186-cfe6-41b9-a86d-89f9cf8657ce" />
 
 # Задание 3
 ### Задача 2
@@ -92,7 +91,7 @@
 4. Создать две ломаные с общими начальной и конечной точками
 5. Показать, что сдвиг общей точки влияет на обе ломаные
 ### Пример решения задачи
-![img_3.png](img_3.png)
+<img width="794" height="204" alt="image" src="https://github.com/user-attachments/assets/7038e066-c306-485b-8983-a2b42e226cdf" />
 
 # Задание 4
 ### Задача 9
@@ -107,7 +106,7 @@
 * Методы добавления точек по одному и группами
 2. Показать разные способы создания ломаной
 ### Пример решения задачи
-![img_4.png](img_4.png)
+<img width="940" height="257" alt="image" src="https://github.com/user-attachments/assets/74a08b39-e6f1-42fd-846a-e75d2943ce33" />
 
 # Задание 5
 ### Задача 7
@@ -131,4 +130,4 @@
 * Суммировать все расстояния 
 3. Реализовать методы добавления массивов/списков точек
 ### Пример решения задачи
-![img_5.png](img_5.png)
+<img width="896" height="201" alt="image" src="https://github.com/user-attachments/assets/73981017-b3ee-43ed-b624-3dfdc6be6a22" />
