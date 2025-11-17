@@ -26,7 +26,8 @@
 * Добавлять только заданные поля в результат
 * Разделять пробелами
 ### Пример решения задачи
-![img.png](img.png)
+<img width="286" height="119" alt="image" src="https://github.com/user-attachments/assets/5a1005bf-6426-4757-8ac5-33e619a36a6e" />
+
 
 # Задание 2
 ### Задача 2
